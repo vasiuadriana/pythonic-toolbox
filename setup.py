@@ -9,6 +9,9 @@ setup(
     ],
     include_package_data=True,
     entry_points={
-        'console_scripts': ['cdate=timing.conversion:cdate']
+        'console_scripts': [
+            'cdate=timing.conversion:cdate',
+            'timestamp=timing.conversion:timestamp'
+        ]
     }
 )
