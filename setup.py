@@ -9,6 +9,6 @@ setup(
     ],
     include_package_data=True,
     entry_points={
-        'console_scripts': ['display-time=timing.conversion:cli']
+        'console_scripts': ['cdate=timing.conversion:cdate']
     }
 )
