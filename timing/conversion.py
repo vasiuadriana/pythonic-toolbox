@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 @click.command()
-@click.option('--timestamp', default=1.0, help='Provide a timestamp to be converted')
+@click.option('--timestamp', '-t', type=float, help='Provide a timestamp to be converted')
 def cdate(timestamp):
     click.echo(datetime.fromtimestamp(float(timestamp)))
 
