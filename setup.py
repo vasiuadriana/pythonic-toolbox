@@ -11,7 +11,8 @@ setup(
     entry_points={
         'console_scripts': [
             'cdate=timing.conversion:cdate',
-            'timestamp=timing.conversion:timestamp'
+            'timestamp=timing.conversion:timestamp',
+            'rm-pyc=files.cleanup:cleanup_pyc'
         ]
     }
 )
