@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="pythonic-toolbox",
     version='0.1',
-    packages=['timing'],
+    packages=find_packages(),
     install_requires=[
         'Click',
     ],
