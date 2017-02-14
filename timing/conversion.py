@@ -23,4 +23,4 @@ def timestamp(date):
         date_obj = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
         click.echo(date_obj.strftime("%s"))
     except ValueError:
-        click.echo('Please provide a valid date in the format "Y-m-d H:M:S"')
+        raise (click.BadParameter('Please provide a valid date in the format "Y-m-d H:M:S"'))
