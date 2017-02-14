@@ -6,7 +6,12 @@ import time
 @click.command()
 @click.option('--timestamp', '-t', type=click.FLOAT, help='Provide a timestamp to be converted')
 def cdate(timestamp):
-    click.echo(datetime.fromtimestamp(float(timestamp)))
+    try:
+        click.echo(datetime.fromtimestamp(float(timestamp)))
+    except TypeError:
+        raise(click.BadParameter('Please provide a timestamp to be converted'))
+    except ValueError:
+        raise(click.BadParameter('Please provide a valid timestamp'))
 
 
 @click.command()
