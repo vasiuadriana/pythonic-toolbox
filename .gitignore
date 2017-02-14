@@ -3,3 +3,4 @@ build/
 dist/
 pythonic_toolbox.egg-info/
 pythonic-toolbox.iml
+__pycache__/
